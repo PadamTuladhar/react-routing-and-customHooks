@@ -1,11 +1,12 @@
 
-import { Link, Route, Routes, useLocation, useNavigate, useRoutes } from 'react-router-dom'
-import './App.css'
-import CommentsComponent from './Components/comments'
-import RecipeCompoent from './Components/recipe'
-import RecipeDetails from './Components/recipe-details'
-import NotFoundComponent from './Components/not-found'
-import LayoutComponent from './Components/layout'
+import { Link, Route, Routes, useLocation, useNavigate, useRoutes } from 'react-router-dom';
+import './App.css';
+import CommentsComponent from './Components/comments';
+import RecipeCompoent from './Components/recipe';
+import RecipeDetails from './Components/recipe-details';
+import NotFoundComponent from './Components/not-found';
+import LayoutComponent from './Components/layout';
+import CustomHooksExample from './Components/custom-hooks-example';
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -47,9 +48,11 @@ function App() {
         <Link className='button' to={'home/recipe'} >Alternative way of navigation to recipe</Link>
         <Link className='button' to={'home/comments'} >Alternative way of navigation to comment</Link>
       </div>
+      <div>
 
-      <button onClick={() => navigate('home/recipe')} className='button'>Go to recipe</button>
-      <button onClick={() => navigate('home/comments')} className='button'>Go to comments</button>
+        <button onClick={() => navigate('home/recipe')} className='button'>Go to recipe</button>
+        <button onClick={() => navigate('home/comments')} className='button'>Go to comments</button>
+      </div>
 
       {/* <Routes>
         <Route path="/home" element={<LayoutComponent />}>
@@ -61,7 +64,8 @@ function App() {
         </Route>
         <Route path="*" element={<NotFoundComponent />} />
       </Routes> */}
-      <CustomRoutes />
+      {/* <CustomRoutes /> */}
+      <CustomHooksExample />
     </>
   )
 }
