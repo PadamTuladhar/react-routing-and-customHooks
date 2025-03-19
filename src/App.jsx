@@ -7,6 +7,7 @@ import RecipeDetails from './Components/recipe-details';
 import NotFoundComponent from './Components/not-found';
 import LayoutComponent from './Components/layout';
 import CustomHooksExample from './Components/custom-hooks-example';
+import ReactHookForm from './Components/react-hook-form';
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -28,6 +29,9 @@ function CustomRoutes() {
     },
     {
       path: '*', element: <NotFoundComponent />
+    },
+    {
+      path: 'react-hook-form', element: <ReactHookForm />
     }
   ]);
 
@@ -64,8 +68,8 @@ function App() {
         </Route>
         <Route path="*" element={<NotFoundComponent />} />
       </Routes> */}
-      {/* <CustomRoutes /> */}
-      <CustomHooksExample />
+      {/* <CustomHooksExample /> */}
+      <CustomRoutes />
     </>
   )
 }

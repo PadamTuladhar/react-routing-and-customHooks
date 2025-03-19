@@ -34,6 +34,13 @@
   margin-right: 30px;
 }
 
+.error {
+  color: #cc0033;
+  display: inline-block;
+  line-height: 15px;
+  margin: 5px 0 0;
+}
+
 
 @keyframes logo-spin {
   from {
