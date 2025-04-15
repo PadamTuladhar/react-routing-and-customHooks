@@ -8,6 +8,8 @@ import NotFoundComponent from './Components/not-found';
 import LayoutComponent from './Components/layout';
 import CustomHooksExample from './Components/custom-hooks-example';
 import ReactHookForm from './Components/react-hook-form';
+import UseRefHook from './Components/hooks/use-ref';
+import UseMemoHook from './Components/hooks/use-memo';
 
 function CustomRoutes() {
   const element = useRoutes([
@@ -32,6 +34,12 @@ function CustomRoutes() {
     },
     {
       path: 'react-hook-form', element: <ReactHookForm />
+    },
+    {
+      path: 'hooks/use-ref', element: <UseRefHook />
+    },
+    {
+      path: 'hooks/use-memo', element: <UseMemoHook />
     }
   ]);
 
